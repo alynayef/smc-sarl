@@ -24,8 +24,15 @@
 
         //Email Settings
         $mail->isHTML(true);
-        $mail->setFrom($email, $name);
+        $mail->setFrom('ne_pas_repondre@scm.contact.com', 'Accusé de Reception');
         $mail->addAddress($email);
+        $mail->Subject = $subject;
+        $mail->Body = $body;
+		
+		//Email Settings
+        $mail->isHTML(true);
+        $mail->setFrom('ne_pas_repondre@scm.contact.com', 'Accusé de Reception');
+        $mail->addAddress('alynayef@gmail.com');
         $mail->Subject = $subject;
         $mail->Body = $body;
 
