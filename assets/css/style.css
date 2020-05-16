@@ -47,8 +47,21 @@ p{
 	  text-justify: inter-word;
 }
 
+.card-title{
+	   text-align: center;
+}
+
+.card-img-top{
+	height: 16em;
+}
+
 h5 :hover{
 	color: #007bff;
+}
+
+.video{
+	width: 1920px;
+	height: 1088px;
 }
 /*--------------------------------------------------------------
 # Back to top button
@@ -894,9 +907,10 @@ section {
 
 .clients .client-logo img {
   transition: all 0.3s ease-in-out;
-  height: 36px;
+  height: 80px;
   -webkit-filter: grayscale(100%);
   filter: grayscale(100%);
+  width: 250px;
 }
 
 .clients .client-logo:hover img {
