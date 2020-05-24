@@ -31,10 +31,10 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .btn-primary {
-    color: #fff;
-    background-color: #010951;
-    border-color: #fff;
-	font-size: 1em;
+  color: #fff;
+  background-color: #010951;
+  border-color: #fff;
+  font-size: 1em;
 }
 /*
 p{
@@ -43,12 +43,12 @@ p{
 }
 */
 .aligner{
-	  text-align: justify;
-	  text-justify: inter-word;
+ text-align: justify;
+ text-justify: inter-word;
 }
 
 .card-title{
-	   text-align: center;
+  text-align: center;
 }
 
 .card-img-top{
@@ -62,6 +62,20 @@ h5 :hover{
 .video{
 	width: 1920px;
 	height: 1088px;
+}
+
+#slide1 {
+  background-image:url('assets/img/slide/slide1.png');
+  background-repeat:no-repeat;
+  background-size:cover;
+  background-position:center;
+}
+
+#slide2 {
+  background-image:url('assets/img/slide/slide2.png');
+  background-repeat:no-repeat;
+  background-size:cover;
+  background-position:center;
 }
 /*--------------------------------------------------------------
 # Back to top button
@@ -99,6 +113,19 @@ h5 :hover{
 @media screen and (max-width: 768px) {
   [data-aos-delay] {
     transition-delay: 0 !important;
+  }
+  #slide1 {
+    background-image:url('assets/img/slide/callslide1.png');
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-position:center;
+  }
+
+  #slide2 {
+    background-image:url('assets/img/slide/callslide2.png');
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-position:center;
   }
 }
 
