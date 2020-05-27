@@ -59,6 +59,11 @@ padding-right: 1.1rem;
 }
 }
 
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+    color: #fff;
+    background-color: #010951;
+}
+
 #moreclim, #morepompe, #morefrigo, #moreplomberie, #moreelectricite, #moresynthese{
 	display: none;
 }
