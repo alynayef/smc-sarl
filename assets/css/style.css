@@ -18,7 +18,7 @@ a {
 }
 
 a:hover {
-  color: #2ae149;
+  color: #007bff;
   text-decoration: none;
 }
 
@@ -45,6 +45,8 @@ p{
 .aligner{
  text-align: justify;
  text-justify: inter-word;
+ padding-left: 0.5em;
+ padding-right: 0.5em;
 }
 
 .card-title{
@@ -64,19 +66,62 @@ h5 :hover{
 	height: 1088px;
 }
 
-#slide1 {
-  background-image:url('assets/img/slide/slide1.png');
-  background-repeat:no-repeat;
-  background-size:cover;
-  background-position:center;
+.imgResponsive{
+  width: 100%;
+  height: auto;
 }
 
-#slide2 {
-  background-image:url('assets/img/slide/slide2.png');
-  background-repeat:no-repeat;
-  background-size:cover;
-  background-position:center;
+#scroll{
+    overflow: scroll;
 }
+
+
+.imgModal{
+    width: 100%;
+    height: 20%;
+    padding: 1em 1em 1em 1em;
+}
+
+.close{
+   padding: 1em 1em 1em 1em;
+}
+.card {
+  margin: 10px 10px;
+}
+
+/* Flip Cards CSS */
+.card-container {
+  display: grid;
+  perspective: 700px;
+}
+
+.card-flip {
+  display: grid;
+  grid-template: 1fr / 1fr;
+  grid-template-areas: "frontAndBack";
+  transform-style: preserve-3d;
+  transition: all 0.7s ease;
+}
+
+.card-flip div {
+  backface-visibility: hidden;
+  transform-style: preserve-3d;
+}
+
+.front {
+  grid-area: frontAndBack;
+}
+
+.back {
+  grid-area: frontAndBack;
+  transform: rotateY(-180deg);
+}
+
+.card-container:hover .card-flip {
+  transform: rotateY(180deg);
+}
+
+
 /*--------------------------------------------------------------
 # Back to top button
 --------------------------------------------------------------*/
@@ -107,6 +152,41 @@ h5 :hover{
   transition: 0.3s ease-in-out;
 }
 
+.w3-modal {
+    z-index: 3;
+    display: none;
+    padding-top: 10em;
+    padding-bottom: 10em;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4);
+}
+
+.popUpParagraphe{
+  padding-left: 1em;
+  padding-right:1em;
+}
+
+button{
+      padding: 1em 1em 1em 1em;
+    margin: 1em 1em 1em 1em;
+}
+
+.popUpTitle1{
+  text-align: center;
+  color: #010951;
+}
+
+.popUpTitle2{
+  size: 3em;
+}
+
+
 /*--------------------------------------------------------------
 # Disable AOS delay on mobile
 --------------------------------------------------------------*/
@@ -114,19 +194,20 @@ h5 :hover{
   [data-aos-delay] {
     transition-delay: 0 !important;
   }
-  #slide1 {
-    background-image:url('assets/img/slide/callslide1.png');
-    background-repeat:no-repeat;
-    background-size:cover;
-    background-position:center;
-  }
-
-  #slide2 {
-    background-image:url('assets/img/slide/callslide2.png');
-    background-repeat:no-repeat;
-    background-size:cover;
-    background-position:center;
-  }
+  .w3-modal {
+    z-index: 3;
+    display: none;
+    padding-top: 10em;
+    padding-bottom: 10em;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4);
+}
 }
 
 /*--------------------------------------------------------------
@@ -580,8 +661,9 @@ h5 :hover{
 # Sections General
 --------------------------------------------------------------*/
 section {
-  padding: 60px 0;
   overflow: hidden;
+  padding-bottom: 0;
+  padding-top: 2em;
 }
 
 .section-bg {

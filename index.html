@@ -8,8 +8,14 @@
   <title>SCM SARL</title>
   <meta content="" name="descriptison">
   <meta content="" name="keywords">
-
-  <!-- Favicons -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <!-- Favicons 
   <link href="assets/img/android-chrome-512x512.png" rel="icon">
   <link href="assets/img/apple-icon-180x180.png" rel="apple-touch-icon">
   <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.no-icons.min.css" rel="stylesheet">
@@ -26,6 +32,7 @@
   <link href="assets/vendor/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet">
   <link href="assets/vendor/aos/aos.css" rel="stylesheet">
   <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
@@ -38,7 +45,7 @@
   ======================================================== -->
 </head>
 
-<body>
+<body data-spy="scroll" data-target="#navbar" data-offset="50">
 
   <!-- ======= Header ======= -->
   <header id="header" class="fixed-top">
@@ -48,14 +55,14 @@
       Uncomment below if you prefer to use an image logo -->
       <a href="index.html" class="logo mr-auto"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>
 
-      <nav class="nav-menu d-none d-lg-block">
-        <ul>
-          <li class="active"><a href="index.html">Home</a></li>
-          <li><a href="index.html#services">Services</a></li>
-          <li ><a href="index.html#about-us" >About us</a></li>
-          <li><a href="index.html#clients">Clients</a></li>
-          <li><a href="index.html#contact">Contact</a></li>
-
+      <nav class="nav-menu d-none d-lg-block" id="navbar">
+        <ul class="nav nav-pills ">
+          <li class="active nav-item"><a class="nav-link active" href="index.html">SCM</a></li>
+          <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+          <li class="nav-item"><a class="nav-link" href="#clients">Clients</a></li>
+          <li class="nav-item"><a class="nav-link" href="#realisations">Realisations</a></li>
+          <li class="nav-item"><a class="nav-link" href="#about-us" >A propos</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
         </ul>
       </nav><!-- .nav-menu -->
 
@@ -69,89 +76,51 @@
     </div>
   </header><!-- End Header -->
 
-  <!-- ======= Hero Section =======   -->
+  <!-- ======= Hero Section =======   https://themes.startbootstrap.com/sb-admin-pro/cards.html-->
   <section>
-    <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
-  <div class="carousel-inner">
-    <div class="carousel-item active imgResponsive" style="width: 100%; height: auto; ">
-      <img class="d-block w-100" src="assets/img/slide/slide1.png" alt="First slide">
+    <!--Carousel Wrapper-->
+    <div id="carousel-example-1z" class="carousel slide carousel-fade" data-ride="carousel">
+      <!--Indicators-->
+      <ol class="carousel-indicators">
+        <li data-target="#carousel-example-1z" data-slide-to="0" class="active"></li>
+        <li data-target="#carousel-example-1z" data-slide-to="1"></li>
+      </ol>
+      <!--/.Indicators-->
+      <!--Slides-->
+      <div class="carousel-inner" role="listbox">
+        <!--First slide-->
+        <div class="carousel-item active">
+          <img class="d-block w-100" src="assets/img/slide/slide1.png"
+          alt="First slide">
+        </div>
+        <!--/First slide-->
+        <!--Second slide-->
+        <div class="carousel-item">
+          <img class="d-block w-100" src="assets/img/slide/slide2.png"
+          alt="Second slide">
+        </div>
+        <!--/Second slide-->
+    <!--Third slide
+    <div class="carousel-item">
+      <img class="d-block w-100" src="https://mdbootstrap.com/img/Photos/Slides/img%20(70).jpg"
+        alt="Third slide">
     </div>
-    <div class="carousel-item imgResponsive" style="width: 100%; height: auto; ">
-      <img class="d-block w-100" src="assets/img/slide/slide2.png" alt="Second slide">
-    </div>
+    /Third slide-->
   </div>
-  <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+  <!--/.Slides-->
+  <!--Controls-->
+  <a class="carousel-control-prev" href="#carousel-example-1z" role="button" data-slide="prev">
     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
     <span class="sr-only">Previous</span>
   </a>
-  <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+  <a class="carousel-control-next" href="#carousel-example-1z" role="button" data-slide="next">
     <span class="carousel-control-next-icon" aria-hidden="true"></span>
     <span class="sr-only">Next</span>
   </a>
+  <!--/.Controls-->
 </div>
-  </section>
-<!--
-  <section id="hero">
-    <div id="heroCarousel" class="carousel slide carousel-fade" data-ride="carousel">
-
-      <div class="carousel-inner" role="listbox">
-
-        !-- Slide 1 
-        <div class="carousel-item active">
-          <video class="video"   muted loop autoplay>
-           <source src="assets/img/videos/slide1.mp4" type="video/mp4">
-           </video>
-           <div class="carousel-container">
-            <div class="carousel-content animated fadeInUp">
-              <h2>Welcome to <span>Company</span></h2>
-              <p>Ut velit est quam dolor ad a aliquid qui aliquid. Sequi ea ut et est quaerat sequi nihil ut aliquam. Occaecati alias dolorem mollitia ut. Similique ea voluptatem. Esse doloremque accusamus repellendus deleniti vel. Minus et tempore modi architecto.</p>
-              <div class="text-center"><a href="" class="btn-get-started">Read More</a></div>
-            </div>
-          </div>
-        </div>
-      --
-      !-- Slide 2 --
-      <div class="carousel-item active imgResponsive" style="background-image: url(assets/img/slide/slide1.png);">
-          !--
-          <div class="carousel-container">
-            <div class="carousel-content animated fadeInUp">
-              <h2>Lorem Ipsum Dolor</h2>
-              <p>Ut velit est quam dolor ad a aliquid qui aliquid. Sequi ea ut et est quaerat sequi nihil ut aliquam. Occaecati alias dolorem mollitia ut. Similique ea voluptatem. Esse doloremque accusamus repellendus deleniti vel. Minus et tempore modi architecto.</p>
-              <div class="text-center"><a href="" class="btn-get-started">Read More</a></div>
-            </div>
-          </div>
-        --
-      </div>
-
-      <!-- Slide 3  --
-
-      <div class="carousel-item imgResponsive" style="background-image: url(assets/img/slide/ecoslidej2.png);">
-          <!--
-          <div class="carousel-container">
-            <div class="carousel-content animated fadeInUp">
-              <h2>Sequi ea ut et est quaerat</h2>
-              <p>Ut velit est quam dolor ad a aliquid qui aliquid. Sequi ea ut et est quaerat sequi nihil ut aliquam. Occaecati alias dolorem mollitia ut. Similique ea voluptatem. Esse doloremque accusamus repellendus deleniti vel. Minus et tempore modi architecto.</p>
-              <div class="text-center"><a href="" class="btn-get-started">Read More</a></div>
-            </div>
-          </div>
-        </div>
-      --
-    </div>
-
-    <a class="carousel-control-prev" href="#heroCarousel" role="button" data-slide="prev">
-      <span class="carousel-control-prev-icon icofont-simple-left" aria-hidden="true"></span>
-      <span class="sr-only">Previous</span>
-    </a>
-
-    <a class="carousel-control-next" href="#heroCarousel" role="button" data-slide="next">
-      <span class="carousel-control-next-icon icofont-simple-right" aria-hidden="true"></span>
-      <span class="sr-only">Next</span>
-    </a>
-
-    <ol class="carousel-indicators" id="hero-carousel-indicators"></ol>
-  </div>
-</div>
-</section><!-- End Hero -->
+</section>
+<!--End Hero -->
 
 <main id="main">
   <!-- ======= Services Section ======= -->
@@ -160,7 +129,9 @@
     <div class="section-title">
       <h2>Services</strong></h2>
     </div>
+    <!--Grid row-->
     <div class="row">
+
      <div class="col">
       <div class="card booking-card" data-aos="zoom-in" data-aos-delay="100">
         <div class="card-body">
@@ -172,213 +143,287 @@
               <div class="mask rgba-white-slight"></div>
             </a>
           </div>
-          <p class="aligner">SCM, votre entreprise en climatisation & autres services associés, a su comprendre et effectuer une
-            transition importante en vous proposant à l’année des systèmes de climatisation à la pointe pour que vous
-            n’ayez plus à subir les affres du temps.<span id="dotsclim"> ...</span><span id="moreclim"> Nous intervenons dans la réalisation de vos installations, la
-              maintenance et le service après-vente de la climatisation de votre entreprise & habitation. Ainsi, nous vous proposons des climatisations à détente directe, monosplit et multisplit, ainsi que des
-              climatiseurs VRV. De plus, nous mettons en place des systèmes de climatisations réversibles plus efficaces
-              que les anciennes installations plus énergivores.
-              Nous sommes certifiés Qualibat et nous intervenons également pour la maintenance de vos installations.
-
-              L'avantage indéniable que nous avons sur la concurrence est l'existence d'un service après-
-              vente reconnu par nos clients pour sa qualité et la réactivité de nos employés. Ces derniers sont à l'écoute
-
-              et nos clients apprécient nos conseils clairs, simples et précis. Enfin, nous intervenons physiquement en cas
-              de besoin de votre part.
-            Prenez contact avec nous pour obtenir des informations ou pour obtenir un devis gratuit et détaillé. </span></p>
-            <div class="text-center"><button type="button" class="btn btn-primary btn-sm" onclick="enSavoirPlus('buttonclim','dotsclim','moreclim')" id="buttonclim">En savoir plus...</button></div></div>
-          </div>
-        </div>
-        <div class="col">
-         <div class="card booking-card" data-aos="zoom-in" data-aos-delay="100">
-          <div class="card-body"><h5 class="card-title"><a href="#!">Installation de pompes à Chaleur</a></h5>
-            <!-- Card image -->
-            <div class="view overlay">
-              <img class="card-img-top imgResponsive" src="assets/img/cards/pompe.png" alt="Card image cap">
-              <a href="#!">
-                <div class="mask rgba-white-slight"></div>
-              </a>
-            </div>
-            <p class="aligner">Avec SCM, vous frappez à la bonne porte. Nous nous occupons de l'installation de vos pompes
-              à chaleur de différentes natures. Profitez également de notre service de maintenance de vos
-              appareils, ainsi que de notre service après-vente vanté par nos clients.<span id="dotspompe"> ...</span><span id="morepompe"> Nos professionnels vous
-                conseillent sur l'équipement adapté à vos besoins et sur les différentes pompes à
-                chaleur existantes.La philosophie de la maison n'est pas de vendre des installations onéreuses
-                et inadaptées. Nous vous proposons toujours des installations optimisées et spécifiques à vos
-                besoins. Et vous proposons différentes pompes à chaleur à savoir des pompes à chaleur
-                air/air, des pompes à chaleur air/eau et des pompes à chaleur eau/eau.
-                L'avantage est de participer à la protection de l'environnement et de réaliser des économies
-                d'énergie. Les pompes à chaleurs air/eau sont un investissement
-                intelligent puisqu'elles utilisent l’air, ressource gratuite, pour assurer votre chauffage, mais
-                également pour produire l’eau chaude dont a besoin votre foyer. Ce système est fiable et vous
-                permet de diviser votre facture en énergie par 3. Ce système est d’une fiabilité exceptionnelle.
-                Nous installons également vos pompes à chaleur réversibles qui font office de climatisation lors
-                des saisons chaudes. Nous installons également vos pompes à chaleur réversibles qui font
-                office de climatiseurs lors des saisons chaudes. N'hésitez pas à nous contacter pour avoir de
-              plus amples informations ou pour obtenir un devis détaillé et gratuit.</span></p>
-              <div class="text-center"><button type="button" class="btn btn-primary btn-sm" onclick="enSavoirPlus('buttonpompe','dotspompe','morepompe')" id="buttonpompe">En savoir plus...</button></div>
-            </div>
-          </div>
+          <div class="text-center"><button onclick="document.getElementById('climatisation').style.display='block'" class="btn btn-primary btn-sm">En savoir plus
+          </button>
         </div>
       </div>
-      <div class="row">
-        <div class="col">
-         <div class="card" data-aos="zoom-in" data-aos-delay="100">
-          <div class="card-body">
-           <h5 class="card-title"><a href="#!">Réfrigération Commerciale & Industrielle</a></h5>
-           <!-- Card image -->
-           <div class="view overlay">
-            <img class="card-img-top imgResponsive" src="assets/img/cards/refrigeration.png" alt="Card image cap">
-            <a href="#!">
-              <div class="mask rgba-white-slight"></div>
-            </a>
-          </div>
-          <p class="aligner"><u><b>Installation de systèmes de réfrigération</b></u><br>
-            En tant que spécialistes en installation d’équipements frigorifiques, nous analysons vos besoins et vous apportons les
-            solutions les mieux adaptées.<span id="dotsfrigo"> ...</span><span id="morefrigo">
-              Destinée à des usages commerciaux et industriels, notre gamme de matériel saura répondre à vos exigences de
-              performance et de qualité.
-              Nous installons vos équipements avec soin afin de garantir leur bon fonctionnement.Depuis le montage jusqu’à la mise en service, nous restons à votre disposition et vous procurons tous nos conseils.
-              Nous pouvons également intervenir pour des travaux de dépannage.
-              <u><b>Vente de matériel frigorifique neuf et d’occasion</b></u><br>
-              Afin de répondre au mieux aux attentes des professionnels, des collectivités et de diverses entreprises, nous proposons
-              une vaste sélection de matériel de réfrigération.
-              Vous trouverez parmi nos offres des machines à glaçons, des chambres froides, des vitrines réfrigérées et des congélateurs
-              issus des grandes marques.
-              Que vous optiez pour le neuf ou l’occasion, faites vos choix en toute simplicité.
-              Grâce à notre expérience et à nos connaissances en équipement de froid professionnel, nous sommes en mesure de vous
-              accompagner lors de vos achats.<br>
-              <b>Des conseils lors de vos achats<br>
-                Des équipements de grandes marques<br>
-              Une installation assurée par des professionnels</b> </span></p>
-              <div class="text-center"><button type="button" class="btn btn-primary btn-sm" onclick="enSavoirPlus('buttonfrigo','dotsfrigo','morefrigo')" id="buttonfrigo">En savoir plus...</button></div>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card" data-aos="zoom-in" data-aos-delay="100">
-            <div class="card-body">
-              <h5 class="card-title"><a href="#!">Plomberie industrielle et des réseaux d'air</a></h5>
-              <!-- Card image -->
-              <div class="view overlay">
-                <img class="card-img-top imgResponsive" src="assets/img/cards/plomberie.png" alt="Card image cap">
-                <a href="#!">
-                  <div class="mask rgba-white-slight"></div>
-                </a>
-              </div>
-              <p class="aligner">Nous possédons tous les équipements spécialisés ainsi que les certificats de qualité appropriés pour vos installations de
-                plomberie industrielle et réseaux complexes (plomberie azote, plomberie gaz, plomberie air comprimé,...). Nous
-                sommes installateur en tuyauterie dans tous les métaux (Inox, Acier, Galva)<span id="dotsplomberie"> ...</span><span id="moreplomberie"> pour le transport et transfert des différents
-                  fluides gazeux ou liquides basse, et haute pression, basse et haute température. Pompage, dosage, régulation, débit,
-                  pression,température, contrôle.<br>
-                  Nous réalisons vos projets de rénovation, de nouvelle installation, ainsi que la réparation et maintenance de vos
-                  systèmes existants.
-                  Etude et réalisation de réseaux de plomberie
-                  SCM réalise les prestations suivantes pour vos travaux de tuyauterie :
-                  Etude, conception et réalisation de vos projets, travaux neufs, extension usine... Installation sur sites, mise en route et
-                  mise en conformité, épreuve.
-                  La maintenance : entretien de vos équipements afin d'en assurer la disponibilité et la fiabilité.
-                  La rénovation, la modernisation, l'amélioration de vos équipements suivant vos besoins, souhaits
-
-                  Nos réalisations en plomberie industrielle
-                  •Systèmes de chauffage à l'eau chaude ou à la vapeur, à la basse ou à la haute pression
-                  •Installation de serpentins de chauffage
-                  •Systèmes hydrauliques
-                  •Systèmes d'air comprimé
-                •Système au gaz, oxygène et acétylène, azote,...</span></p>
-                <div class="text-center"><button type="button" class="btn btn-primary btn-sm" onclick="enSavoirPlus('buttonplomberie','dotsplomberie','moreplomberie')" id="buttonplomberie">En savoir plus...</button></div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col">
-           <div class="card" data-aos="zoom-in" data-aos-delay="100">
-            <div class="card-body">
-             <h5 class="card-title"><a href="#!">Electricité</a></h5>
-             <!-- Card image -->
-             <div class="view overlay">
-              <img class="card-img-top imgResponsive" src="assets/img/cards/electricite.png" alt="Card image cap">
-              <a href="#!">
-                <div class="mask rgba-white-slight"></div>
-              </a>
-            </div>
-            <p class="aligner">
-              <ul>
-              <li><b>Câblage de machines spéciales</b></li>
-              <ul> <li> Câblage d'armoires électriques</li>
-                  <li>* Maintenance et rénovation</li>
-                  <li>* Études électriques</li><span id="dotselectricite"> ...</span><span id="moreelectricite"><br>
-              </ul>
-              <li>* Automatisme et supervision</li>
-              <li>* Distribution électrique</li>
-              <li>* Installations sur site (France / International)</b></li></span></ul></p>
-              <div class="text-center"><button type="button" class="btn btn-primary btn-sm" onclick="enSavoirPlus('buttonelectricite','dotselectricite','moreelectricite')" id="buttonelectricite">En savoir plus...</button></div>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card" data-aos="zoom-in" data-aos-delay="100">
-            <div class="card-body">
-              <h5 class="card-title"><a href="#!">Synthèse Provisoire</a></h5>
-              <!-- Card image -->
-              <div class="view overlay">
-                <img class="card-img-top imgResponsive" src="assets/img/cards/pluss.png" alt="Card image cap">
-                <a href="#!">
-                  <div class="mask rgba-white-slight"></div>
-                </a>
-              </div>
-              <p class="aligner"><b>Vente et pose de chambres froides</b><br>
-                Des chambres froides adaptées à votre métier<br>
-                Un service de dépannage efficace<br>
-                  <br><b>Dépannage et entretien de matériel de réfrigération</b><br>
-                  Intervention sur tous types d’équipements frigorifiques<br>
-                  Un savoir-faire au service des professionnels<br><span id="dotssynthese"> ...</span><span id="moresynthese">
-                  <br><b>Installation et entretien de climatisation</b><br>
-                  Des installateurs bien formés<br>
-                  Un entretien efficace de vos climatiseurs<br>
-                  <br><b>Installation de pompes à chaleur</b><br>
-                  Le spécialiste des pompes à chaleur<br>
-                  Des installateurs professionnels à votre service
-                </span>
-              </p>
-              <div class="text-center"><button type="button" class="btn btn-primary btn-sm" onclick="enSavoirPlus('buttonsynthese','dotssynthese','moresynthese')" id="buttonsynthese">En savoir plus...</button></div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section><!-- End Services Section -->
-
-  <!-- ======= About Us Section ======= -->
-  <section id="about-us" class="about-us">
-    <div class="container" data-aos="fade-up">
-
-      <div class="section-title">
-        <h2>About Us</strong></h2>
-      </div>
-
-      <div class="row content">
-        <div class="col-lg-6" data-aos="fade-right">
-         <img class="card-img-top" src="assets/img/logoscm.jpg" alt="Card image cap">
-       </div>
-       <div class="col-lg-6 pt-4 pt-lg-0" data-aos="fade-left">
-        <p>
-          L'établissement est spécialisé dans le secteur des travaux d'installation de systèmes de froid commercial et industriel,
-          Installations et Entretien de pompes à Chaleur, Réfrigération commerciale et industrielle, Plomberie industrielle et des
-        réseaux d’air et pour finir en Electricité.</p>
-        <p>Intervenant également dans les services de maintenance et de réparation auprès des clients, nous assurons le
-        fonctionnement et le suivi de vos équipements.</p>
-      </p>
-      <p class="font-italic">
-        Nous sommes une entreprise Écoresponsable et faisons nos prestations dans le respect de l’environnement.
-      </p>
     </div>
   </div>
 
+  <div class="col">
+   <div class="card booking-card" data-aos="zoom-in" data-aos-delay="100">
+    <div class="card-body"><h5 class="card-title"><a href="#!">Installation de pompes à Chaleur</a></h5>
+      <!-- Card image -->
+      <div class="view overlay">
+        <img class="card-img-top imgResponsive" src="assets/img/cards/pompe.png" alt="Card image cap">
+        <a href="#!">
+          <div class="mask rgba-white-slight"></div>
+        </a>
+      </div>
+      <div class="text-center"><button onclick="document.getElementById('pompes').style.display='block'" class="btn btn-primary btn-sm">En savoir plus
+      </button>
+    </div>
+  </div>
 </div>
-</section><!-- End About Us Section -->
+</div>
+</div>
 
+<div class="row">
+
+  <div class="col">
+   <div class="card" data-aos="zoom-in" data-aos-delay="100">
+    <div class="card-body">
+     <h5 class="card-title"><a href="#!">Réfrigération Commerciale & Industrielle</a></h5>
+     <!-- Card image -->
+     <div class="view overlay">
+      <img class="card-img-top imgResponsive" src="assets/img/cards/refrigeration.png" alt="Card image cap">
+      <a href="#!">
+        <div class="mask rgba-white-slight"></div>
+      </a>
+    </div>
+    <div class="text-center"><button onclick="document.getElementById('refrigeration').style.display='block'" class="btn btn-primary btn-sm">En savoir plus
+    </button>
+  </div>
+</div>
+</div>
+</div>
+
+<div class="col">
+  <div class="card" data-aos="zoom-in" data-aos-delay="100">
+    <div class="card-body">
+      <h5 class="card-title"><a href="#!">Plomberie industrielle et des réseaux d'air</a></h5>
+      <!-- Card image -->
+      <div class="view overlay">
+        <img class="card-img-top imgResponsive" src="assets/img/cards/plomberie.png" alt="Card image cap">
+        <a href="#!">
+          <div class="mask rgba-white-slight"></div>
+        </a>
+      </div>
+      <div class="text-center"><button onclick="document.getElementById('plomberie').style.display='block'" class="btn btn-primary btn-sm">En savoir plus
+      </button>
+    </div>
+  </div>
+</div>
+</div>
+
+</div>
+
+<div class="row">
+
+  <div class="col">
+   <div class="card" data-aos="zoom-in" data-aos-delay="100">
+    <div class="card-body">
+     <h5 class="card-title"><a href="#!">Electricité</a></h5>
+     <!-- Card image -->
+     <div class="view overlay">
+      <img class="card-img-top imgResponsive" src="assets/img/cards/electricite.png" alt="Card image cap">
+      <a href="#!">
+        <div class="mask rgba-white-slight"></div>
+      </a>
+    </div>
+    <div class="text-center"><button onclick="document.getElementById('electricite').style.display='block'" class="btn btn-primary btn-sm">En savoir plus
+    </button>
+  </div>
+</div>
+</div>
+</div>
+
+<div class="col">
+  <div class="card" data-aos="zoom-in" data-aos-delay="100">
+    <div class="card-body">
+      <h5 class="card-title"><a href="#!">Autres Services Externes</a></h5>
+      <!-- Card image -->
+      <div class="view overlay">
+        <img class="card-img-top imgResponsive" src="assets/img/cards/pluss.png" alt="Card image cap">
+        <a href="#!">
+          <div class="mask rgba-white-slight"></div>
+        </a>
+      </div>
+      <div class="text-center"><button onclick="document.getElementById('autres-services').style.display='block'" class="btn btn-primary btn-sm">En savoir plus</button>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+<!--POP SECTION START-->
+<div id="autres-services" class="w3-modal">
+  <div class="w3-modal-content">
+    <div class="w3-container">
+            <h1 class="logo mr-auto popUpTitle1"><span>SCM</span>-SARL</h1>
+      <img class="card-img-top imgResponsive imgModal" src="assets/img/cards/pluss.png" alt="Card image cap">
+      <div class="overflow-auto">
+        <h1 class="card-title popUpTitle2"><a href="#!">Autres Services Externes</a></h1>
+        <p class="aligner popUpParagraphe">
+          Des conseils lors de vos achats<br>
+          Des équipements de grandes marques<br>
+          Une installation assurée par des professionnels<br>
+          N'hésitez pas à nous contacter pour avoir de plus amples informations ou pour obtenir un devis détaillé et gratuit.<br>
+        </p>
+      </div>
+      <div class="text-center"><button onclick="document.getElementById('autres-services').style.display='none'" class="btn btn-primary btn-sm">Fermer</button></div>
+    </div>
+  </div>
+</div>
+
+<div id="electricite" class="w3-modal">
+  <div class="w3-modal-content">
+    <div class="w3-container">
+      <h1 class="logo mr-auto popUpTitle1"><span>SCM</span>-SARL</h1>
+      <img class="card-img-top imgResponsive imgModal" src="assets/img/cards/electricite.png" alt="Card image cap">
+      <div class="overflow-auto">
+        <h1 class="card-title popUpTitle2"><a href="#!">Electricité</a></h1>
+        <p class="aligner popUpParagraphe"> 
+          SCM intervient sur tous types de projets, en basse et haute tension, pour des missions d’installation électrique,
+          de maintenance ou d’entretien. Notre équipe formée en continu aux dernières innovations technologiques
+          saura vous accompagner efficacement durant toutes les étapes de votre projet.<br>
+          Nous faisons du câblage de machines et d’armoires électriques, de la maintenance, de la rénovation, de
+          l’automatisme, de la supervision, de la distribution électrique.<br>
+          <b>N'hésitez pas à nous contacter pour avoir de plus amples informations ou pour obtenir un devis détaillé et
+          gratuit.</b>
+        </div>
+        <div class="text-center"><button onclick="document.getElementById('electricite').style.display='none'" class="btn btn-primary btn-sm">Fermer</button></div>
+      </div>
+    </div>
+  </div>
+
+  <div id="plomberie" class="w3-modal">
+    <div class="w3-modal-content">
+      <div class="w3-container">
+        <h1 class="logo mr-auto popUpTitle1"><span>SCM</span>-SARL</h1>
+        <img class="card-img-top imgResponsive imgModal" src="assets/img/cards/plomberie.png" alt="Card image cap">
+        <div class="overflow-auto">
+          <h1 class="card-title popUpTitle2"><a href="#!">SCM, spécialiste de la plomberie
+          industrielle et des réseaux d'air</a></h1>
+          <p class="aligner popUpParagraphe"> 
+            Nous possédons tous les équipements spécialisés ainsi que les certificats de qualité appropriés pour vos installations de
+            plomberie industrielle et réseaux complexes (plomberie azote, plomberie gaz, plomberie air comprimé,...). Nous sommes
+            installateur en tuyauterie dans tous les métaux (Inox, Acier, Galva) pour le transport et transfert des différents fluides
+            gazeux ou liquides basse, et haute pression, basse et haute température. Pompage, dosage, régulation, débit, pression,
+            température, contrôle.<br>
+            Nous réalisons vos projets de rénovation, de nouvelle installation, ainsi que la réparation et maintenance de vos systèmes
+            existants.<br>
+
+            <br><b>Etude et réalisation de réseaux de plomberie</b>
+            SCM réalise les prestations suivantes pour vos travaux de tuyauterie :<br>
+            Etude, conception et réalisation de vos projets, travaux neufs, extension usine... Installation sur sites, mise en route et
+            mise en conformité, épreuve.<br>
+            La maintenance : entretien de vos équipements afin d'en assurer la disponibilité et la fiabilité.<br>
+            La rénovation, la modernisation, l'amélioration de vos équipements suivant vos besoins, souhaits<br>
+            N'hésitez pas à nous contacter pour avoir de plus amples informations ou pour obtenir un devis détaillé et gratuit.<br>
+
+            <br><b>Nos réalisations en plomberie industrielle</b>
+            <ul>
+              <li>Systèmes de chauffage à l'eau chaude ou à la vapeur, à la basse ou à la haute pression</li>
+              <li>Installation de serpentins de chauffage</li>
+              <li>Systèmes hydrauliques</li>
+              <li>Systèmes d'air comprimé</li>
+              <li>Système au gaz, oxygène et acétylène, azote,...</li>
+            </ul>
+          </div>
+          <div class="text-center"><button onclick="document.getElementById('plomberie').style.display='none'" class="btn btn-primary btn-sm">Fermer</button></div>
+        </div>
+      </div>
+    </div>
+
+    <div id="refrigeration" class="w3-modal">
+      <div class="w3-modal-content">
+        <div class="w3-container">
+          <h1 class="logo mr-auto popUpTitle1"><span>SCM</span>-SARL</h1>
+          <img class="card-img-top imgResponsive imgModal" src="assets/img/cards/electricite.png" alt="Card image cap">
+          <div class="overflow-auto">
+            <h1 class="card-title popUpTitle2"><a href="#!">Réfrigération Commerciale & Industrielle</a></h1>
+            <p class="aligner popUpParagraphe"> 
+              <b>Installation de systèmes de réfrigération</b><br>
+              En tant que spécialistes en installation d’équipements frigorifiques, nous analysons vos besoins et vous apportons les
+              solutions les mieux adaptées.<br>
+              Destinée à des usages commerciaux et industriels, notre gamme de matériel saura répondre à vos exigences de
+              performance et de qualité. Nous installons vos équipements avec soin afin de garantir leur bon fonctionnement.<br>
+              Depuis le montage jusqu’à la mise en service, nous restons à votre disposition et vous procurons tous nos conseils.
+              Nous pouvons également intervenir pour des travaux de dépannage.<br>
+              <br><b>Vente de matériel frigorifique neuf et d’occasion</b><br>
+              Afin de répondre au mieux aux attentes des professionnels, des collectivités et de diverses entreprises, nous
+              proposons une vaste sélection de matériel de réfrigération.<br>
+              Vous trouverez parmi nos offres des machines à glaçons, des chambres froides, des vitrines réfrigérées et des
+              congélateurs issus des grandes marques.<br>
+              Que vous optiez pour le neuf ou l’occasion, faites vos choix en toute simplicité.
+              Grâce à notre expérience et à nos connaissances en équipement de froid professionnel, nous sommes en mesure de
+              vous accompagner lors de vos achats.<br>
+            N'hésitez pas à nous contacter pour avoir de plus amples informations ou pour obtenir un devis détaillé et gratuit.</p>
+          </div>
+          <div class="text-center"><button onclick="document.getElementById('refrigeration').style.display='none'" class="btn btn-primary btn-sm">Fermer</button></div>
+        </div>
+      </div>
+    </div>
+
+    <div id="pompes" class="w3-modal">
+      <div class="w3-modal-content">
+        <div class="w3-container">
+          <h1 class="logo mr-auto popUpTitle1"><span>SCM</span>-SARL</h1>
+          <img class="card-img-top imgResponsive imgModal" src="assets/img/cards/electricite.png" alt="Card image cap">
+          <div class="overflow-auto">
+            <h1 class="card-title popUpTitle2"><a href="#!">Installation de pompes à Chaleur</a></h1>
+            <p class="aligner popUpParagraphe">
+              Avec <b>SCM</b>, vous frappez à la bonne porte. Nous nous occupons de l'installation de vos pompes à chaleur de
+              différentes natures. Profitez également de notre service de maintenance de vos appareils, ainsi que de notre
+              service après-vente vanté par nos clients. Nos professionnels vous conseillent sur l'équipement adapté à vos besoins
+              et sur les différentes pompes à chaleur existantes. La philosophie de la maison n'est pas de vendre des installations
+              onéreuses et inadaptées. Nous vous proposons toujours des installations optimisées et spécifiques à vos besoins. Et
+              vous proposons différentes pompes à chaleur à savoir des pompes à chaleur air/air, des pompes à chaleur air/eau et
+              des pompes à chaleur eau/eau.
+            </p>
+            <p class="aligner popUpParagraphe">
+              L'avantage est de participer à la protection de l'environnement et de réaliser des économies d'énergie. Les pompes à
+              chaleurs air/eau sont un investissement intelligent puisqu'elles utilisent l’air, ressource gratuite, pour assurer votre
+              chauffage, mais également pour produire l’eau chaude dont a besoin votre foyer. Ce système est fiable et vous permet
+              de diviser votre facture en énergie par 3. Ce système est d’une fiabilité exceptionnelle. Nous installons également vos
+              pompes à chaleur réversibles qui font office de climatisation lors des saisons chaudes. Nous installons également vos
+              pompes à chaleur réversibles qui font office de climatiseurs lors des saisons chaudes.
+            </p>
+            <p class="aligner popUpParagraphe">
+              N'hésitez pas à nous contacter pour avoir de plus amples informations ou pour obtenir un devis détaillé et gratuit.
+            </p>
+
+          </div>
+          <div class="text-center"><button onclick="document.getElementById('pompes').style.display='none'" class="btn btn-primary btn-sm">Fermer</button></div>
+        </div>
+      </div>
+    </div>
+
+    <div id="climatisation" class="w3-modal">
+      <div class="w3-modal-content">
+        <div class="w3-container">
+          <h1 class="logo mr-auto popUpTitle1"><span>SCM</span>-SARL</h1>
+          <img class="card-img-top imgResponsive imgModal" src="assets/img/cards/clim.png" alt="Card image cap">
+          <div class="overflow-auto">
+            <h1 class="card-title popUpTitle2"><a href="#!">Climatisation Centrale & Individuelle</a></h1>
+            <p class="aligner popUpParagraphe"> 
+              <b>SCM</b>, votre entreprise en climatisation & autres services associés, a su comprendre et effectuer une transition importante
+              en vous proposant à l’année des systèmes de climatisation à la pointe pour que vous n’ayez plus à subir les affres du
+              temps. Nous intervenons dans la réalisation de vos installations, la maintenance et le service après-vente de la
+              climatisation de votre entreprise & habitation.
+            </p>
+            <p class="aligner popUpParagraphe"> 
+              Ainsi, nous vous proposons des climatisations à détente directe, monosplit et multisplit, ainsi que des
+              climatiseurs VRV. De plus, nous mettons en place des systèmes de climatisations réversibles plus efficaces que les
+              anciennes installations plus énergivores.
+            </p>
+            <p class="aligner popUpParagraphe"> 
+              Nous sommes certifiés Qualibat et nous intervenons également pour la maintenance de vos installations. L'avantage
+              indéniable que nous avons sur la concurrence est l'existence d'un service après-vente reconnu par nos clients pour sa
+              qualité et la réactivité de nos employés. Ces derniers sont à l'écoute et nos clients apprécient nos conseils clairs, simples
+              et précis. Enfin, nous intervenons physiquement en cas de besoin de votre part.
+            </p>
+            <p class="aligner popUpParagraphe"> 
+              Prenez contact avec nous pour obtenir des informations ou pour obtenir un devis gratuit et détaillé.
+            </p>
+          </div>
+          <div class="text-center"><button onclick="document.getElementById('climatisation').style.display='none'" class="btn btn-primary btn-sm">Fermer</button></div>
+        </div>
+      </div>
+    </div>
+    <!--POP-UP SECTION END-->
+  </section><!-- End Services Section -->
 <!-- ======= Our Clients Section ======= -->
 <section id="clients" class="clients">
   <div class="container" data-aos="fade-up">
@@ -442,7 +487,7 @@
   </div>
 </section><!-- End Our Clients Section -->
 <!-- ======= Portfolio Section ======= -->
-<section id="portfolio" class="portfolio">
+<section id="realisations" class="portfolio">
   <div class="container">
 
     <div class="section-title" data-aos="fade-up">
@@ -453,7 +498,7 @@
       <div class="col-lg-12 d-flex justify-content-center">
         <ul id="portfolio-flters">
           <li data-filter="*" class="filter-active">All</li>
-           <li data-filter=".filter-app">Climatisation</li>
+          <li data-filter=".filter-app">Climatisation</li>
           <li data-filter=".filter-app">Pompe à Chaleur</li>
           <li data-filter=".filter-card">Refrigeration</li>
           <li data-filter=".filter-web">Plomberie</li>
@@ -554,7 +599,7 @@
         </div>
       </div>
 
-       <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+      <div class="col-lg-4 col-md-6 portfolio-item filter-web">
         <img src="assets/img/portfolio/image10.jpg" class="img-fluid" alt="">
         <div class="portfolio-info">
           <h4>Web 3</h4>
@@ -564,7 +609,7 @@
         </div>
       </div>
 
-       <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+      <div class="col-lg-4 col-md-6 portfolio-item filter-web">
         <img src="assets/img/portfolio/image11.jpg" class="img-fluid" alt="">
         <div class="portfolio-info">
           <h4>Web 3</h4>
@@ -574,7 +619,7 @@
         </div>
       </div>
 
-       <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+      <div class="col-lg-4 col-md-6 portfolio-item filter-web">
         <img src="assets/img/portfolio/image12.jpg" class="img-fluid" alt="">
         <div class="portfolio-info">
           <h4>Web 3</h4>
@@ -584,7 +629,7 @@
         </div>
       </div>
 
-       <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+      <div class="col-lg-4 col-md-6 portfolio-item filter-web">
         <img src="assets/img/portfolio/image13.jpg" class="img-fluid" alt="">
         <div class="portfolio-info">
           <h4>Web 3</h4>
@@ -594,7 +639,7 @@
         </div>
       </div>
 
-       <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+      <div class="col-lg-4 col-md-6 portfolio-item filter-web">
         <img src="assets/img/portfolio/image14.jpg" class="img-fluid" alt="">
         <div class="portfolio-info">
           <h4>Web 3</h4>
@@ -604,7 +649,7 @@
         </div>
       </div>
 
-       <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+      <div class="col-lg-4 col-md-6 portfolio-item filter-web">
         <img src="assets/img/portfolio/image15.jpg" class="img-fluid" alt="">
         <div class="portfolio-info">
           <h4>Web 3</h4>
@@ -618,6 +663,36 @@
 
   </div>
 </section><!-- End Portfolio Section -->
+
+  <!-- ======= About Us Section ======= -->
+  <section id="about-us" class="about-us">
+    <div class="container" data-aos="fade-up">
+
+      <div class="section-title">
+        <h2>About Us</strong></h2>
+      </div>
+
+      <div class="row content">
+        <div class="col-lg-6" data-aos="fade-right">
+         <img class="card-img-top" src="assets/img/logoscm.jpg" alt="Card image cap">
+       </div>
+       <div class="col-lg-6 pt-4 pt-lg-0" data-aos="fade-left">
+        <p>
+          L'établissement est spécialisé dans le secteur des travaux d'installation de systèmes de froid commercial et industriel,
+          Installations et Entretien de pompes à Chaleur, Réfrigération commerciale et industrielle, Plomberie industrielle et des
+        réseaux d’air et pour finir en Electricité.</p>
+        <p>Intervenant également dans les services de maintenance et de réparation auprès des clients, nous assurons le
+        fonctionnement et le suivi de vos équipements.</p>
+      </p>
+      <p class="font-italic">
+        Nous sommes une entreprise Écoresponsable et faisons nos prestations dans le respect de l’environnement.
+      </p>
+    </div>
+  </div>
+
+</div>
+</section><!-- End About Us Section -->
+
 <!-- ======= Contact Section ======= -->
 <div class="map-section">
   <iframe style="border:0; width: 100%; height: 350px;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2636.040774008082!2d1.8455519150302784!3d48.647335179267415!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e426e9168ed06b%3A0xd44e6c175e3d8a5a!2sColl%C3%A8ge%20Catherine%20De%20Vivonne!5e0!3m2!1sfr!2sfr!4v1589139780629!5m2!1sfr!2sfr" frameborder="0" allowfullscreen></iframe>
@@ -678,9 +753,9 @@
             <div class="validate"></div>
           </div>
           <div class="mb-3">
-            <div class="loading">Loading</div>
+            <div class="loading">chargement</div>
             <div class="error-message"></div>
-            <div class="sent-message">Your message has been sent. Thank you!</div>
+            <div class="sent-message">Votre Message est envoyé!</div>
           </div>
           <div class="text-center"><button type="submit" onclick="sendEmail()">Send Message</button></div>
         </form>
@@ -765,42 +840,33 @@
             College Catherine de Vivone BP79 <br>
             78120, Rambouillet<br>
             France <br><br>
-            <strong>Phone:</strong> numerotelephone<br>
-            <strong>Email:</strong> info@example.com<br>
+            <strong>Tel:</strong> 06-95-84-98-81<br>
+            <strong>Email:</strong>scm.froid.climatisation@gmail.com<br>
           </p>
         </div>
-
         <div class="col-lg-2 col-md-6 footer-links">
-          <h4>Useful Links</h4>
+          <h4>Plan</h4>
           <ul>
-            <li><i class="bx bx-chevron-right"></i> <a href="index.php">Home</a></li>
-            <li><i class="bx bx-chevron-right"></i> <a href="index.php#about-us">About us</a></li>
-            <li><i class="bx bx-chevron-right"></i> <a href="index.php#services">Services</a></li>
-            <li><i class="bx bx-chevron-right"></i> <a href="index.php#clients">Clients</a></li>
-            <li><i class="bx bx-chevron-right"></i> <a href="index.php#contact">Contact</a></li>
+            <li><i class="bx bx-chevron-right"></i> <a href="index.php">SCM</a></li>
+            <li><i class="bx bx-chevron-right"></i> <a href="index.php#about-us">Services</a></li>
+            <li><i class="bx bx-chevron-right"></i> <a href="index.php#services">Clients</a></li>
+            <li><i class="bx bx-chevron-right"></i> <a href="index.php#clients">Realisations</a></li>
+            <li><i class="bx bx-chevron-right"></i> <a href="#about-us">A propos</a></li>
+            <li><i class="bx bx-chevron-right"></i> <a href="#contact">Contact</a></li>
           </ul>
         </div>
 
         <div class="col-lg-3 col-md-6 footer-links">
-          <h4>Our Services</h4>
+          <h4>Nos Services</h4>
           <ul>
-            <li><i class="bx bx-chevron-right"></i> <a href="#">Climatisation Centrale</a></li>
-            <li><i class="bx bx-chevron-right"></i> <a href="#">Climatisation Individuelle</a></li>
-            <li><i class="bx bx-chevron-right"></i> <a href="#">Plomberie</a></li>
-            <li><i class="bx bx-chevron-right"></i> <a href="#">Refrigeration commercial</a></li>
-            <li><i class="bx bx-chevron-right"></i> <a href="#">Refrigeration industriel</a></li>
-            <li><i class="bx bx-chevron-right"></i> <a href="#">Electricite</a></li>
+            <li><i class="bx bx-chevron-right"></i> <a href="#">Climatisation Centrale & Individuelle</a></li>
+            <li><i class="bx bx-chevron-right"></i> <a href="#">Installation de pompes à Chaleur</a></li>
+            <li><i class="bx bx-chevron-right"></i> <a href="#">Réfrigération Commerciale & Industrielle</a></li>
+            <li><i class="bx bx-chevron-right"></i> <a href="#">Plomberie industrielle et des réseaux d'air</a></li>
+            <li><i class="bx bx-chevron-right"></i> <a href="#">Electricité</a></li>
+            <li><i class="bx bx-chevron-right"></i> <a href="#">Autres Services Externes</a></li>
           </ul>
         </div>
-
-        <div class="col-lg-4 col-md-6 footer-newsletter">
-          <h4>Join Our Newsletter</h4>
-          <p>Tamen quem nulla quae legam multos aute sint culpa legam noster magna</p>
-          <form action="" method="post">
-            <input type="email" name="email"><input type="submit" value="Subscribe">
-          </form>
-        </div>
-
       </div>
     </div>
   </div>
@@ -808,9 +874,6 @@
   <div class="container d-md-flex py-4">
 
     <div class="mr-md-auto text-center text-md-left">
-      <div class="copyright">
-        &copy; Copyright <strong><span>Company</span></strong>. All Rights Reserved
-      </div>
       <div class="credits">
         <!-- All the links in the footer should remain intact. -->
         <!-- You can delete the links only if you purchased the pro version. -->
@@ -845,6 +908,7 @@
 
 <!-- Template Main JS File -->
 <script src="assets/js/main.js"></script>
+
 
 </body>
 
