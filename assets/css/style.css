@@ -1045,8 +1045,8 @@ section {
   display: flex;
   justify-content: center;
   align-items: center;
-  border-right: 1px solid #ececec;
-  border-bottom: 1px solid #ececec;
+/*  border-right: 1px solid #ececec;
+  border-bottom: 1px solid #ececec;*/
   overflow: hidden;
   background: #fff;
   height: 100px;
