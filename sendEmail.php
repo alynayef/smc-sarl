@@ -15,10 +15,10 @@
 
         //SMTP Settings
         $mail->isSMTP();
-        $mail->Host = "smtp.gmail.com";
+        $mail->Host = "mail.privateemail.com";
         $mail->SMTPAuth = true;
-        $mail->Username = "alynayef@gmail.com";
-        $mail->Password = 'Calici8Honey';
+        $mail->Username = "contact@reine-nature.xyz";
+        $mail->Password = 'Hamete_16';
         $mail->Port = 465; //587
         $mail->SMTPSecure = "ssl"; //tls
 
@@ -29,14 +29,14 @@
         $mail->Subject = $subject;
         $mail->Body = $body;
 		
-		//Email Settings
-        $mail->isHTML(true);
-        $mail->setFrom('ne_pas_repondre@scm.contact.com', 'Accusé de Reception');
-        $mail->addAddress('alynayef@gmail.com');
-        $mail->Subject = $subject;
-        $mail->Body = $body;
 
         if ($mail->send()) {
+			//Email Settings
+			$mail->isHTML(true);
+			$mail->setFrom('ne_pas_repondre@scm.contact.com', 'Accusé de Reception');
+			$mail->addAddress('alynayef@gmail.com');
+			$mail->Subject = $subject;
+			$mail->Body = $body;
             $status = "success";
             $response = "Email is sent!";
         } else {
